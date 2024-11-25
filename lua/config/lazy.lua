@@ -45,7 +45,7 @@ require("lazy").setup({
     },
   },
 })
-vim.cmd.colorscheme("catppuccin")
+-- vim.cmd.colorscheme("catppuccin")
 -- Custom Commands
 vim.api.nvim_create_user_command("FlutterCommands", function()
   require("telescope").extensions.flutter.commands()

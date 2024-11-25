@@ -75,11 +75,18 @@ return {
           open_cmd = "tabedit",
         },
         settings = {
-          analysisExcludedFolders = {
-            vim.fn.expand("/home/sifat/.pub-cache"),
-            vim.fn.expand("/home/sifat/flutter"),
-          },
+          showTodos = true,
+          completeFunctionCalls = true,
+          renameFilesWithClasses = "prompt", -- "always"
+          enableSnippets = true,
+          updateImportsOnRename = true, -- Whether to update imports and other directives when files are renamed. Required for `FlutterRename` command.
         },
+        -- settings = {
+        --   analysisExcludedFolders = {
+        --     vim.fn.expand("/home/sifat/.pub-cache"),
+        --     vim.fn.expand("/home/sifat/flutter"),
+        --   },
+        -- },
       })
     end,
   },
